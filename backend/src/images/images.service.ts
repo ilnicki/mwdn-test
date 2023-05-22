@@ -1,15 +1,24 @@
 import { Injectable } from '@nestjs/common';
 import { CreateImageDto } from './dto/create-image.dto';
 import { UpdateImageDto } from './dto/update-image.dto';
+import { ImagesSourceService } from './image-source.service';
+import { Image } from './entities/image.entity';
 
 @Injectable()
 export class ImagesService {
+  constructor(private readonly imagesSourceService: ImagesSourceService) {}
+
   create(createImageDto: CreateImageDto) {
     return 'This action adds a new image';
   }
 
-  findAll() {
-    return `This action returns all images`;
+  async findAll(): Promise<Image[]> {
+    const [images, photos] = await Promise.all([
+      this.imagesSourceService.getImages(),
+      this.imagesSourceService.getPhotos(),
+    ]);
+
+    return [...images, ...photos];
   }
 
   findOne(id: number) {
