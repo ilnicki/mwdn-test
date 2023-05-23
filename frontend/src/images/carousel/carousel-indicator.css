@@ -1,0 +1,20 @@
+.carousel-indicator {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.carousel-indicator-dot {
+  display: flex;
+  width: 0.5em;
+  padding-right: 0.1em;
+  fill: #95a6a6;
+}
+
+.carousel-indicator-dot:hover {
+  fill: #e5eeee;
+}
+
+.carousel-indicator-dot-active {
+  fill: #b5eb03;
+}

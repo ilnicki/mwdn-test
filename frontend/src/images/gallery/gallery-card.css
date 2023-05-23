@@ -1,0 +1,18 @@
+.gallery-card {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  margin: 1em;
+}
+
+.gallery-card-image {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.gallery-card-title {
+  box-sizing: border-box; 
+  width: 300px;
+  padding: 0.5em;
+}

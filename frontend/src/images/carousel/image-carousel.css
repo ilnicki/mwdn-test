@@ -1,0 +1,18 @@
+.carousel {
+  background-color: #192123;
+  padding: 2em 1em;
+  border-radius: 0.5em;
+}
+
+.carousel-image-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.carousel-image {
+  width: 300px;
+  height: 300px;
+}

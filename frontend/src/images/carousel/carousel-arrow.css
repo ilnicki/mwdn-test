@@ -1,0 +1,14 @@
+.carousel-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-arrow-icon {
+  width: 2em;
+  fill: #e5eeee;
+}
+
+.carousel-arrow-icon:hover {
+  fill: #585f60;
+}
